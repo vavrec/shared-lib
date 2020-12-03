@@ -1,6 +1,8 @@
 import cz.vavrecka.Variables
 
 def call() {
-   echo  Variables.variables["age"]
-   echo  Variables.variables["name"]
+   test();
+   test2();
+   echo  Variables.variables["age"];
+   echo  Variables.variables["name"];
 }

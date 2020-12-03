@@ -1,7 +1,8 @@
 package cz.vavrecka
 
-class Variables{
+/* groovylint-disable-next-line ClassNameSameAsFilename */
+class Variables {
 
-    static Map<String,String> variables = [];
+    static Map<String,String> variables = [:] ;
 
 }

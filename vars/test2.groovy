@@ -2,6 +2,6 @@ import cz.vavrecka.Variables
 
 def call() {
     //Variables.variables["name"] == "david"
-    Variables.testMap.put("agessssss","ssss")
-    echo "test2"
+    Variables.testMap.put("test2","ssss");
+    echo "test2";
 }

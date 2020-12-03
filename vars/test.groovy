@@ -1,5 +1,5 @@
 import cz.vavrecka.Variables
 
 def call() {
-    Variables.variables["age"] == "52"
+   // Variables.variables["age"] == "52"
 }

@@ -1,8 +1,5 @@
+import cz.vavrecka.Variables
+
 def call() {
-    node {
-        sh '''
-        git version
-        pwd
-      '''
-    }
+    Variables.variables["age"] == "52"
 }

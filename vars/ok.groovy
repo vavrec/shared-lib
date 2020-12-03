@@ -6,4 +6,6 @@ def call() {
     echo "konec";
     Variables.testMap.put("age","ssss");
      println( Variables.testMap.size());
+     test2();
+     println( Variables.testMap.size());
 }

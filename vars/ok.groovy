@@ -1,9 +1,5 @@
-import cz.vavrecka.Variables
+import cz.vavrecka.Hello
 
-def call() {
-    echo  Variables.SLACK_MESSAGE;
-     println( Variables.testMap.size());
-    Variables.testMap.put("age","ssss");
-     println( Variables.testMap.size());
-      echo "konec";
+def call(){
+    echo "uraaaa"
 }

@@ -1,13 +1,14 @@
 import cz.vavrecka.SetUp
 
 
-def call(String filePath, String version) {
+def call(String version) {
 
     node {
 
         def connectionData = SetUp.setUp()
 
         stage("deploy") {
+            echo "ola la"
             sshagent(['TEST-SSH']) {
                 def connection = connectionData['user'] +'@'+connectionData['address']+':' + connectionData['path']
                 sh "unzip colman-${version}.zip"

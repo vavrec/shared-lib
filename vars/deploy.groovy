@@ -9,9 +9,8 @@ def call(String version) {
 
         stage("deploy") {
             echo "ola la"
-            echo
             sshagent(['TEST-SSH']) {
-                def connection = connectionData['user'] +'@'+connectionData['address']+':' + connectionData['path']
+               // def connection = connectionData['user'] +'@'+connectionData['address']+':' + connectionData['path']
                 sh 'pwd'
 //                sh "unzip colman-${version}.zip"
 //                sh 'scp -r ./colman-$' + version + '/batch ' + connection

@@ -1,11 +1,11 @@
-import cz.vavrecka.SetUp
+import groovy.json.JsonSlurper
 
 
 def call(String version) {
 
     node {
 
-        def connectionData = SetUp.setUp()
+        def connectionData = parseSetUp()
 
         stage("deploy") {
             echo "ola la"
@@ -17,4 +17,9 @@ def call(String version) {
             }
         }
     }
+}
+
+
+private  Object parseSetUp(){
+    return new JsonSlurper().parse(new File('resources' + File.separator + 'prod.json'))
 }

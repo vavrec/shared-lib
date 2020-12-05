@@ -11,7 +11,7 @@ def call(String version) {
             echo "ola la"
             sshagent(['TEST-SSH']) {
                // def connection = connectionData['user'] +'@'+connectionData['address']+':' + connectionData['path']
-                sh 'pwd'
+  //              sh 'pwd'
 //                sh "unzip colman-${version}.zip"
 //                sh 'scp -r ./colman-$' + version + '/batch ' + connection
 //                sh """rm -rf colman-*"""

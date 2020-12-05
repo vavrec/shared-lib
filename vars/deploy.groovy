@@ -21,5 +21,5 @@ def call(String version) {
 
 
 private  Object parseSetUp(){
-    return new JsonSlurper().parse(new File('resources' + File.separator + 'prod.json'))
+    return new JsonSlurper().parse(libraryResource('prod.json'))
 }

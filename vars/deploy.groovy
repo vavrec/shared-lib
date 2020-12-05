@@ -5,7 +5,7 @@ def call(String version) {
 
     node {
 
-        def connectionData = parseSetUp()
+ //       def connectionData = parseSetUp()
 
         stage("deploy") {
             echo "ola la"
@@ -20,7 +20,7 @@ def call(String version) {
     }
 }
 
-
-private  Object parseSetUp(){
-    return new JsonSlurper().parseText(libraryResource('prod.json'))
-}
+//
+//private  Object parseSetUp(){
+//    return new JsonSlurper().parseText(libraryResource('prod.json'))
+//}

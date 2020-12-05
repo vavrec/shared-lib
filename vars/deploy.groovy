@@ -20,7 +20,7 @@ def call(String version) {
     }
 }
 
-//
-//private  Object parseSetUp(){
-//    return new JsonSlurper().parseText(libraryResource('prod.json'))
-//}
+@NonCPS
+private  Object parseSetUp(){
+    return new JsonSlurper().parseText(libraryResource('prod.json'))
+}

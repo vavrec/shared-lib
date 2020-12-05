@@ -10,8 +10,8 @@ def call(String version) {
         stage("deploy") {
             echo "ola la"
             sshagent(['TEST-SSH']) {
-                def connection = connectionData['user'] + '@' + connectionData['address']+ ':' + connectionData['path']
-                //              sh 'pwd'
+                def connection = connectionData['user'] + '@' + connectionData['address'] + ':' + connectionData['path']
+                sh 'pwd'
 //                sh "unzip colman-${version}.zip"
 //                sh 'scp -r ./colman-$' + version + '/batch ' + connection
 //                sh """rm -rf colman-*"""
@@ -21,7 +21,7 @@ def call(String version) {
 }
 
 @NonCPS
-private Map<String,String> parseSetUp() {
-    def config =  new JsonSlurper().parseText(libraryResource('prod.json'))
-    return ['user': config['user'],'address' : config['address'],'path' : config['path'] ]
+private Map<String, String> parseSetUp() {
+    def config = new JsonSlurper().parseText(libraryResource('prod.json'))
+    return ['user': config['user'], 'address': config['address'], 'path': config['path']]
 }

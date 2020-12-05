@@ -12,9 +12,9 @@ def call(String version) {
             sshagent(['TEST-SSH']) {
                 def connection = connectionData['user'] + '@' + connectionData['address'] + ':' + connectionData['path']
                 sh 'pwd'
-//                sh "unzip colman-${version}.zip"
-//                sh 'scp -r ./colman-$' + version + '/batch ' + connection
-//                sh """rm -rf colman-*"""
+                sh "unzip colman-${version}.zip"
+                sh 'scp -r ./colman-$' + version + '/batch ' + connection
+                sh """rm -rf colman-*"""
             }
         }
     }
